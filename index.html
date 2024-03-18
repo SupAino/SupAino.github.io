@@ -7,10 +7,10 @@
 </head>
 <body>
     <p>witam</p>
-    <a href="v1.html" id="przycisk">stary wyglad</a>
+    <a href="v1.html" id="bhtml">stary wyglad</a>
 
     <script>
-        document.querySelectorAll("#przycisk").forEach(button => {
+        document.querySelectorAll("#bhtml").forEach(button => {
           button.addEventListener("click", function(event) {
             event.preventDefault();
             const urlWithoutExtension = this.getAttribute("href").replace(".html", "");
