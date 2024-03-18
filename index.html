@@ -7,7 +7,15 @@
 </head>
 <body>
     <p>witam</p>
-    <a href="v1.html">stary wyglad</a>
+    <a href="v1.html" id="przycisk">stary wyglad</a>
+
+    <script>
+        document.getElementById("przycisk").addEventListener("click", function(event) {
+          event.preventDefault();
+          window.location.href = "v1";
+        });
+    </script>
+    
     <p>kiedys to bedzie lepsze narazie robie tak aby cokolwiek bylo</p>
         <p>po prawie roku jakies zmiany</p>
     <h1>witam wielkosc 1</h1>
