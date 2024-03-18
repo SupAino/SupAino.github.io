@@ -10,9 +10,12 @@
     <a href="v1.html" id="przycisk">stary wyglad</a>
 
     <script>
-        document.getElementById("przycisk").addEventListener("click", function(event) {
-          event.preventDefault();
-          window.location.href = "v1";
+        document.querySelectorAll("#przycisk").forEach(button => {
+          button.addEventListener("click", function(event) {
+            event.preventDefault();
+            const urlWithoutExtension = this.getAttribute("href").replace(".html", "");
+            window.location.href = urlWithoutExtension;
+          });
         });
     </script>
     
